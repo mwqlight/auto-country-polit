@@ -1,0 +1,95 @@
+/* ==========================================
+   Vue主题颜色调色板
+   来源: https://github.com/vuejs/theme
+   ========================================== */
+
+/* 基础颜色 */
+:root {
+  /* 白色系 */
+  --vt-c-white: #ffffff;           /* 纯白色 */
+  
+  /* 黑色系 */
+  --vt-c-black: #181818;           /* 纯黑色 */
+  
+  /* 品牌色 */
+  --vt-c-indigo: #2c3e50;          /* 靛蓝色 */
+  
+  /* 分割线颜色 - 浅色主题 */
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);  /* 次要分割线 */
+  
+  /* 分割线颜色 - 深色主题 */
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);   /* 次要分割线 */
+  
+  /* 文本颜色 - 浅色主题 */
+  --vt-c-text-light-1: var(--vt-c-indigo);         /* 主要文本 */
+  
+  /* 文本颜色 - 深色主题 */
+  --vt-c-text-dark-1: var(--vt-c-white);           /* 主要文本 */
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);   /* 次要文本 */
+}
+
+/* ==========================================
+   项目语义化颜色变量
+   ========================================== */
+
+/* 浅色主题语义化变量 */
+:root {
+  --color-background: var(--vt-c-white);           /* 页面背景色 */
+  
+  --color-border: var(--vt-c-divider-light-2);     /* 边框颜色 */
+  
+  --color-heading: var(--vt-c-text-light-1);       /* 标题文本色 */
+  --color-text: var(--vt-c-text-light-1);          /* 正文文本色 */
+  
+  --section-gap: 160px;                            /* 区块间距 */
+}
+
+/* ==========================================
+   深色主题语义化变量
+   ========================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);            /* 页面背景色 */
+    
+    --color-border: var(--vt-c-divider-dark-2);       /* 边框颜色 */
+    
+    --color-heading: var(--vt-c-text-dark-1);         /* 标题文本色 */
+    --color-text: var(--vt-c-text-dark-2);            /* 正文文本色 */
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

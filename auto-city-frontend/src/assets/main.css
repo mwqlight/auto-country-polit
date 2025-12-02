@@ -1,0 +1,119 @@
+/* ==========================================
+   主题颜色变量
+   ========================================== */
+
+/* 主要颜色 */
+:root {
+  --primary-color: #3b82f6;        /* 主色调 */
+  --primary-light: #dbeafe;        /* 主色调浅色 */
+  --primary-dark: #2563eb;         /* 主色调深色 */
+  --primary-color-light: #93c5fd;  /* 主色调更浅色 */
+  
+  --secondary-color: #64748b;      /* 次要颜色 */
+  --secondary-dark: #475569;       /* 次要颜色深色 */
+  --secondary-color-light: #94a3b8; /* 次要颜色更浅色 */
+  
+  /* 状态颜色 */
+  --success-color: #10b981;        /* 成功状态色 */
+  --success-light: #d1fae5;        /* 成功状态浅色 */
+  --success-color-light: #6ee7b7;  /* 成功状态更浅色 */
+  
+  --warning-color: #f59e0b;        /* 警告状态色 */
+  --warning-light: #fffbeb;        /* 警告状态浅色 */
+  --warning-color-light: #fcd34d;  /* 警告状态更浅色 */
+  
+  --danger-color: #ef4444;         /* 危险状态色 */
+  --danger-light: #fee2e2;         /* 危险状态浅色 */
+  --danger-color-light: #fecaca;   /* 危险状态更浅色 */
+  
+  /* 文本颜色 */
+  --text-primary: #1e293b;         /* 主要文本色 */
+  --text-secondary: #64748b;       /* 次要文本色 */
+  
+  /* 背景颜色 */
+  --background-color: #f8fafc;     /* 页面背景色 */
+  --card-bg: #ffffff;              /* 卡片背景色 */
+  --header-bg: #ffffff;            /* 头部背景色 */
+  --sidebar-bg: #ffffff;           /* 侧边栏背景色 */
+  --submenu-bg: #f8fafc;           /* 子菜单背景色 */
+  
+  /* 边框和交互颜色 */
+  --border-color: #e2e8f0;         /* 边框颜色 */
+  --hover-bg: #f1f5f9;             /* 悬停背景色 */
+  --unread-bg: #eff6ff;            /* 未读消息背景色 */
+  
+  /* 表格和表单颜色 */
+  --table-header-bg: #f8fafc;      /* 表头背景色 */
+  --input-bg: #ffffff;             /* 输入框背景色 */
+}
+
+/* ==========================================
+   深色主题变量
+   ========================================== */
+
+[data-theme="dark"] {
+  /* 主要颜色 */
+  --primary-color: #60a5fa;        /* 主色调 */
+  --primary-light: #1e3a8a;        /* 主色调浅色 */
+  --primary-dark: #93c5fd;         /* 主色调深色 */
+  --primary-color-light: #93c5fd;  /* 主色调更浅色 */
+  
+  --secondary-color: #94a3b8;      /* 次要颜色 */
+  --secondary-dark: #cbd5e1;       /* 次要颜色深色 */
+  --secondary-color-light: #94a3b8; /* 次要颜色更浅色 */
+  
+  /* 状态颜色 */
+  --success-color: #34d399;        /* 成功状态色 */
+  --success-light: #064e3b;        /* 成功状态浅色 */
+  --success-color-light: #6ee7b7;  /* 成功状态更浅色 */
+  
+  --warning-color: #fbbf24;        /* 警告状态色 */
+  --warning-light: #78350f;        /* 警告状态浅色 */
+  --warning-color-light: #fcd34d;  /* 警告状态更浅色 */
+  
+  --danger-color: #f87171;         /* 危险状态色 */
+  --danger-light: #7f1d1d;         /* 危险状态浅色 */
+  --danger-color-light: #fecaca;   /* 危险状态更浅色 */
+  
+  /* 文本颜色 */
+  --text-primary: #f1f5f9;         /* 主要文本色 */
+  --text-secondary: #cbd5e1;       /* 次要文本色 */
+  
+  /* 背景颜色 */
+  --background-color: #0f172a;     /* 页面背景色 */
+  --card-bg: #1e293b;              /* 卡片背景色 */
+  --header-bg: #1e293b;            /* 头部背景色 */
+  --sidebar-bg: #1e293b;           /* 侧边栏背景色 */
+  --submenu-bg: #0f172a;           /* 子菜单背景色 */
+  
+  /* 边框和交互颜色 */
+  --border-color: #334155;         /* 边框颜色 */
+  --hover-bg: #334155;             /* 悬停背景色 */
+  --unread-bg: #1e3a8a;            /* 未读消息背景色 */
+  
+  /* 表格和表单颜色 */
+  --table-header-bg: #0f172a;      /* 表头背景色 */
+  --input-bg: #1e293b;             /* 输入框背景色 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-primary);
+  background: var(--background-color);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
